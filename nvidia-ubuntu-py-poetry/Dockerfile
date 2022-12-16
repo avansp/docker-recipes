@@ -17,9 +17,7 @@ RUN apt-get update && apt-get install -y \
     screen \
  && rm -rf /var/lib/apt/lists/*
 
-# This docker file is using conda
-RUN conda update conda
+
 
 # Set the default command to python3
 CMD ["bash"]
-
